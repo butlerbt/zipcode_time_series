@@ -12,6 +12,6 @@ conda env create -f environment.yml
 conda activate zipcode
 
 # make oy-env available to you as a kernel in jupyter
-python -m ipykernel install --user --name oy-env --display-name "Python (zipcode)"
+python -m ipykernel install --user --name zipcode --display-name "Python (zipcode)"
 ```
 
