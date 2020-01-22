@@ -8,10 +8,10 @@ This project relies on you using the [`environment.yml`](environment.yml) file t
 # create the zipcode conda environment
 conda env create -f environment.yml
 
-# activate the oy-env conda environment
+# activate the zipcode conda environment
 conda activate zipcode
 
-# make oy-env available to you as a kernel in jupyter
+# make zipcode available to you as a kernel in jupyter
 python -m ipykernel install --user --name zipcode --display-name "Python (zipcode)"
 ```
 
