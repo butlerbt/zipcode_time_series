@@ -71,11 +71,11 @@ Using approximately 20 years of published data from Zillow on the monthly median
 ## Results 
 
 From our analysis, the five best zip codes to invest in are as follows: 
-• 34982 - Fort Pierce, FL - projected 71% 5-year appreciation 
-• 33982 - Punta Gorda, FL - projected 66% 5-year appreciation 
-• 34951 - Fort Pierce, FL - projected 65% 5-year appreciation 
-• 37209 - Nashville-Davidson, TN - projected 65% 5-year appreciation 
-• 15201 - Pittsburgh, PA - projected 64% 5-year appreciation
+  * 34982 - Fort Pierce, FL - projected 71% 5-year appreciation 
+  * 33982 - Punta Gorda, FL - projected 66% 5-year appreciation 
+  * 34951 - Fort Pierce, FL - projected 65% 5-year appreciation 
+  * 37209 - Nashville-Davidson, TN - projected 65% 5-year appreciation 
+  * 15201 - Pittsburgh, PA - projected 64% 5-year appreciation
 
 The top three Zip Codes are located in coastal Florida communities. While these three Zip Codes have the largest percent growth, they have much larger confidence intervals than the last two, suggesting that Nashville and Pittsburgh may be “safer” investment opportunities. The large confidence intervals for the Florida communities may be a result of lingering effects from the 2008 recession.
 
