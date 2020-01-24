@@ -75,7 +75,7 @@ def get_param_combos(max_range=None, p_max=None ,d_max=None, q_max=None):
         pdq = list(itertools.product(p_max,d_max,q_max))
         return pdq
 
-def ARIMA_param_gridsearch(df, max_range=None, p_max=None ,d_max=None, q_max=None):
+def ARIMA_param_gridsearch(df, max_range=None, p_max=None ,d_max=None, q_max=None, verbose = True):
         
     """
     Finds the optimum p,d,q parameters for an ARIMA model using AIC as the metric
@@ -98,13 +98,15 @@ def ARIMA_param_gridsearch(df, max_range=None, p_max=None ,d_max=None, q_max=Non
                                     enforce_invertibility=False)                                      
         output = mod.fit()
         ans.append([comb, output.aic])
-        print('ARIMA {} : AIC Calculated ={}'.format(comb, output.aic))
-    
+        if verbose == True:
+            print('ARIMA {} : AIC Calculated ={}'.format(comb, output.aic))
+
     ans_df = pd.DataFrame(ans, columns=['pdq', 'aic'])
+    
     print(ans_df.loc[ans_df['aic'].idxmin()])
     return ans_df.loc[ans_df['aic'].idxmin()][0]
 
-def ARIMA_MODEL(df, params):
+def ARIMA_MODEL(df, params, verbose = True):
     """
     fits an ARIMA model to the input df using the params (tuple) to define p,d,q
     """
@@ -120,10 +122,12 @@ def ARIMA_MODEL(df, params):
 
 
     # Fit the model and print results
-    print(output.summary().tables[1])
-    
-    output.plot_diagnostics(figsize=(15, 18))
-    plt.show()
+    # print(output.summary().tables[1])
+
+    if verbose == True:
+        print(output.summary().tables[1])
+        output.plot_diagnostics(figsize=(15, 18))
+        plt.show()
     
     return output
     
