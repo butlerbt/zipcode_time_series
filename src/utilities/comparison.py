@@ -159,7 +159,7 @@ def comparison_plot(df, zipcode):
     plt.legend()
 
     #save figure
-    plt.title(f"ARIMA/Prophet Model Comparison \n median home sale price for {city}, {state}, {zipcode}")
+    plt.title(f"ARIMA/Prophet Model Comparison \n Median Home Sale Price for {city}, {state}, {zipcode}")
     fig.tight_layout()
-    plt.savefig(f'../../figures/comparison/{city}_ARIMA_model_validation.png')
+    plt.savefig(f'../../figures/comparison/{city}_{zipcode}_ARIMA_model_validation.png')
     plt.show()
