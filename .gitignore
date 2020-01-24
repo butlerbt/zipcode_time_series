@@ -2,7 +2,7 @@
 .DS_Store
 
 # Data files
-*.csv
+# *.csv
 *.db
 *.sqlite
 *.xls
