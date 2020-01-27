@@ -1,5 +1,5 @@
 # National Home Value Analysis and Modeling
-Using time series modeling to analyze and forecast nation wide zipcode single family median home values using Facebook Prophet ARIMA models.   
+Using time series modeling to analyze and forecast nation wide zipcode single family median home values using Facebook Prophet and ARIMA time series models.   
 
 #### This README.pdf file will serve as a roadmap to this repository. The repository is open and available to the public.
 
